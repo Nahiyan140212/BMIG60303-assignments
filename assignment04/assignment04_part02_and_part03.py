@@ -219,9 +219,6 @@ for topic_name, words in topics_exp7.items():
 
 
 # EXPERIMENT 8: Custom stopwords 
-print("\n" + "-"*70)
-print("EXPERIMENT 8: Custom Stopwords (removing artifacts)")
-print("-"*70)
 
 # Add custom stopwords for COVID papers
 custom_stopwords = list(english_stopwords) + [
@@ -372,6 +369,7 @@ vis_data = pyLDAvis.lda_model.prepare(
 # Save as HTML file
 output_file = 'lda_visualization_part3.html'
 pyLDAvis.save_html(vis_data, output_file)
+
 
 
 # pyLDAvis.display(vis_data)
